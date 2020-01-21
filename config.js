@@ -11,12 +11,14 @@ fs.emptyDir('screenshots/',function(err){
 exports.config = {
     framework : "jasmine2",
     directConnect : "true",
-
+    //seleniumAddress: 'http://localhost:4444/wd/hub',
 
     capabilities : {
         unexpectedAlertBehaviour : 'accept',
         browserName : 'chrome',
     },
+
+  //  useAllAngular2AppRoots: true,
 
     specs : [
       //  './Specs/Core/Portal/11200_TC10113_Portal_Cargo Release Issue.js',
